@@ -6,7 +6,7 @@
 </head>
 <body>
     <?php
-        echo("HelloWORLD!!")  
+        echo "<h1> Georges Site </h1>" 
     ?>
 
 </body>
