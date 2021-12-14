@@ -4,17 +4,20 @@
 <meta charset="utf-8">
 <title>postvsget</title>
 <body>
-<form action="postVSget.php" method="get">
-<input type="password" name="password"><br>
+<form action="postVSget.php" method="post">
+Password: <input type="password" name="password"><br>
+</form>
 <br>
 <input type="submit">
-<?php  echo $_GET["password"] ?>
+<?php  
+echo $_POST["password"]; 
+?>
 
 
 
 
 
-</form>
+
 
 
 
