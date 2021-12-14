@@ -11,10 +11,6 @@
     $gpa = 32.45;
     $isMale = false;
     echo $phrase;
-
-
-
-
     ?>
 
 </body>
