@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset= 'utf-8'>
-        <title></title>
+        <title>Getting user input</title>
 </head>
 <body>
    
