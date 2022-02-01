@@ -4,45 +4,91 @@
     <meta charset="utf-8">
     <title>School System</title> 
     <style>
-        body {background-color: powderblue;
+        body {background-color:whitesmoke;
         
         }
-        h2   {color: white;
+        .fullcard {
+            margin-left:40px;
+            width: 60%;
+            border:1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px 5px;
+            padding:4px;
+        }
+        .cardContent{
+
+            padding:10px;
+            text-align: start;
+        }
+        .welcome{
+
+            width:100%;
+            height:50px;
+            background-color: #900C3F;
+            justify-content: center;
+            padding-left:20px ;
+        }
+
+        h2   {
+            text-align: center;
+            color: white;
             font-family: Arial, Helvetica, sans-serif;
+            height:30px;
             
         }
         p { 
             font-size: 16px;
             font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            font-weight: bold;
         }
         .border{
-            width: 300px;
-            background-color: grey;
+            width: 400px;
+            background-color: rgba(45, 45, 45, 0.1);
             border-color: gray;
             border-width: 5px;
-            border-radius: 10px;
+            border-radius: 5px;
             border-style: solid;
             padding-left: 20px;
-            padding-top: 10px;
+            padding-top: 5px;
             padding-bottom: 10px;
 
+        }
+        #thumbnail{
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
         }
         
 </style>
 </head>
-<h2  class="border"> <center>Welcome</center></h2>
+<div class="welcome">
+    <img  src="book.png" width="45px" style="float: right;" style="padding-right: 20px;">
+<h2 style="float:left;"> Home</center></h2>
+</div>
+
 <body>
-    <hr>
     <br>
     <br>
-    <p>  This area is to be filled by admitted students only:<br>
+    <div class="fullcard" id="thumbnail" >
+        <div class="cardContent">
+    
         <form class="border" action="inputSchool.php" method="get">
+        <p>  This area is to be filled by admitted students only:<br><br>
             <label for ="name">Name:</label><br>
                 <input type="text" name="name"> <br>
             <label for ="adm">Admission No:</label><br>
                 <input type="text" name="adm"> <br>
             <label for "hostel">Hostel:</label><br>
             <input type="text" name="hostel"> <br> <br><br>
+            <label for "gender">Gender:</label><br><br>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="nonbinary" name="gender" value="nonbinary">
+            <label for="nonbinary">Non Binary</label><br>
+            
+            
+
     </p>
     <hr>
     <br>
@@ -56,14 +102,12 @@
             <input type="submit" text="Submit">
         </form> 
     </p>
+        </div>
     <hr>
     <br>
     <br>
     <p> Verify that the following information is true before you proceed:
     </p>
-    
-    <hr>
-    
         <?php 
         $sname =$_GET["name"];
         $sadm =$_GET["adm"];
@@ -83,15 +127,6 @@
         ?>
 
     <p> If correct, please <a href="www.tukenya.ac.ke" target="blank"> proceed</a></p>
-    
-
-
-
-
-
-
-
-
 
     </p>
 
