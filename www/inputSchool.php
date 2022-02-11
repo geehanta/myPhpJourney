@@ -54,8 +54,24 @@
             padding-bottom: 10px;
 
         }
+        .border2{
+            width: 400px;
+            background-color: rgba(45, 45, 85, 0.1);
+            border-color: gray;
+            border-width: 5px;
+            border-radius: 5px;
+            border-style: solid;
+            padding-left: 20px;
+            padding-bottom: 20px;
+
+        }
+        
         #thumbnail{
             box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        }
+        .links{
+        color: blue;
+        opacity: 0.7;
         }
         
 </style>
@@ -103,8 +119,10 @@
         </form> 
     </p>
         </div>
+        <br>
+    <div class="border2" id="thumbnail">
+        <div class="cardContent">
     <hr>
-    <br>
     <br>
     <p> Verify that the following information is true before you proceed:
     </p>
@@ -126,11 +144,11 @@
         echo "identified by $eid <br>";
         ?>
 
-    <p> If correct, please <a href="www.tukenya.ac.ke" target="blank"> proceed</a></p>
+    <p> If correct, please <a class="links" href="www.tukenya.ac.ke" target="blank"> proceed</a></p>
 
     </p>
 
-
+    </div>
 
 </body>
 </html>
