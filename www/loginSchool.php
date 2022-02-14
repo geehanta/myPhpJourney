@@ -10,6 +10,16 @@
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bolder;
     }
+    h3{
+        background-color: rgba(45, 45, 45, 0.1);
+    
+        text-align: center;
+        padding:10px;
+        color: #900C3F;
+        border-radius: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+    }
     
     .header{
 
@@ -33,13 +43,15 @@
 
     }
     .border{
-            width: 500px;
+            width: 50%;
             margin: auto;
+            background-color: antiquewhite;
             border-color: gray;
-            border-width: 5px;
+            border-width: 4px;
             border-radius: 5px;
             border-style: solid;
             padding: 30px;
+            line-height: 15px;
     }
     .btn{
        margin: auto;
@@ -49,6 +61,13 @@
         border-radius: 5px;
         width: 60px;
         height: 25px;
+        line-height: 20px;
+    } 
+    a:hover{
+        color:brown;
+    }
+    .btn:hover{
+        background-color:grey;
     }
 
     
@@ -68,12 +87,13 @@
 <div class="header">   
 <h2 style="float:left;">Login</center></h2>
 </div>
+
 <body>
-    <a href="inputSchool.php" <img src="close.png" width="40px" style="float: right;" style="margin-top: 85px;"> </a>
+   
     <div class="pageFrame"align="center">
         <h3>Sign In</h3>
        
-    <form class="border" method="get" action="inputSchool.php">
+    <form class="border" method="get" action="loginSchool.php">
         <br>
         <br>
         <label for ="name">Name</label>
@@ -88,10 +108,20 @@
         <br>
         <br>
         <br>
-        <p style="float: right;">You don't have an account? <a href="signup.php">Sign Up</a></p>
+        <p style="padding: 10px;">You don't have an account? <a href="input.php">Sign Up</a></p>
     </form>
+    <?php 
+        $s1name =$_GET["name"];
+        $s1adm =$_GET["adm"];
+        $s1pwd =$_GET["pwd"];
+       
     
-
+        echo "You are $s1name <br>";
+        echo "of admission number $s1adm <br>";
+        echo "Remember to change this immediately $s1pwd <br><br>";
+        ?>
+    <a href="inputSchool.php" <img  src="close.png" width="40px" style="float: right;"> </a>
+    
     </div>
 </body>
 </html>
