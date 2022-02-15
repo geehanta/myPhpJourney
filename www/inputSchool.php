@@ -8,12 +8,13 @@
         
         }
         .fullcard {
-            margin-left:40px;
-            width: 60%;
+            margin:auto;
+            width: 50%;
             border:1px solid #ccc;
             border-radius: 5px;
-            margin: 10px 5px;
-            padding:4px;
+            padding:10px;
+            padding-bottom: 35px;
+            height: max-content;
         }
         .cardContent{
 
@@ -43,19 +44,21 @@
             font-weight: bold;
         }
         .border{
-            width: 400px;
+            margin: auto;
+            width:50%;
             background-color: rgba(45, 45, 45, 0.1);
             border-color: gray;
             border-width: 5px;
             border-radius: 5px;
             border-style: solid;
             padding-left: 20px;
-            padding-top: 5px;
+            padding-top: 35px;
             padding-bottom: 10px;
 
         }
         .border2{
-            width: 400px;
+            margin: auto;
+            width: 50%;
             background-color: rgba(45, 45, 85, 0.1);
             border-color: gray;
             border-width: 5px;

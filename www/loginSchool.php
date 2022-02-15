@@ -61,7 +61,7 @@
         border-radius: 5px;
         width: 60px;
         height: 25px;
-        line-height: 20px;
+        
     } 
     a:hover{
         color:brown;
@@ -108,7 +108,7 @@
         <br>
         <br>
         <br>
-        <p style="padding: 10px;">You don't have an account? <a href="input.php">Sign Up</a></p>
+        <p style="padding: 10px;">You don't have an account? <a href="inputSchool.php">Register</a></p>
     </form>
     <?php 
         $s1name =$_GET["name"];
