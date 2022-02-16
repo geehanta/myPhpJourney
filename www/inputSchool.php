@@ -10,16 +10,40 @@
         .fullcard {
             margin:auto;
             width: 50%;
+            position: relative;
+            top: 50px;
             border:1px solid #ccc;
             border-radius: 5px;
             padding:10px;
             padding-bottom: 35px;
             height: max-content;
         }
+        .sidecardLeft{
+            margin:auto;
+            width:20%;
+            float: left;
+            border:1px solid #ccc;
+            border-top-right-radius: 10px;
+            padding: 10px;
+            margin-left: 10px;
+            height: 500px;
+        }
+        .sidecardRight{
+            margin:auto;
+            width:20%;
+            float: right;
+            border:1px solid #ccc;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;            
+            padding: 10px;
+            margin-left: 10px;
+            height: 500px;
+        }
         .cardContent{
 
             padding:10px;
             text-align: start;
+            
         }
         .welcome{
 
@@ -34,9 +58,9 @@
             text-align: center;
             color: white;
             font-family: Arial, Helvetica, sans-serif;
-            height:30px;
-            
+            height:30px;  
         }
+        
         p { 
             font-size: 16px;
             font-family: Arial, Helvetica, sans-serif;
@@ -87,6 +111,14 @@
 <body>
     <br>
     <br>
+    <h2 align=center   style="color: #900C3F;">Register Here</h2>
+    <div class="sidecardLeft" id="thumbnail">
+        <h2 style="color: #900C3F;">Menu</h2>
+    </div>
+    <div class="sidecardRight" id="thumbnail">
+        <h2 style="color: #900C3F;">Contacts</h2>
+    </div>
+
     <div class="fullcard" id="thumbnail" >
         <div class="cardContent">
     
