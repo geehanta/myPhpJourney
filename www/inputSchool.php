@@ -17,6 +17,7 @@
             padding:10px;
             padding-bottom: 35px;
             height: max-content;
+            background-color:#E8E8E8;
         }
         .sidecardLeft{
             margin:auto;
@@ -45,16 +46,45 @@
             text-align: start;
             
         }
-        .welcome{
-
+        #navbar{
+            position: fixed;
+            top:0px;
+            left: 0px;
             width:100%;
             height:50px;
             background-color: #900C3F;
             justify-content: center;
             padding-left:20px ;
         }
+        nav ul {
+            margin: 0px;
+            padding: 5px 0px 5px 30px;
+            }
+        nav li {
+             display: inline;
+             margin-right: 20px;
+             padding: 10px;
+             
+            }
+        a {
+            text-decoration: none;
+            color: white;
+            height: 30px;
+            font-size: 23px;
+            }
+        a:hover{
+            color:#ccc;
+            padding: 15px;
+            background-color: rgba(45, 45, 45, 0.6);
+        }
 
         h2   {
+            text-align: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            height:30px;  
+        }
+        .header{
             text-align: center;
             color: white;
             font-family: Arial, Helvetica, sans-serif;
@@ -100,23 +130,50 @@
         color: blue;
         opacity: 0.7;
         }
+        #searchbar{
+            position: absolute;
+            top: 10px;
+            left: 30px;
+        }
+        section{
+            position: relative;  
+        }
+        .btn:hover{
+            background-color: #900C3F;
+            color: white;
+            
+        }
         
 </style>
 </head>
-<div class="welcome">
-    <img  src="book.png" width="45px" style="float: right;" style="padding-right: 20px;">
-<h2 style="float:left;"> Home</center></h2>
+<main>
+<div>
+    <nav id="navbar">
+        <nav class="header">
+        <ul >
+            <li><a href="inputSchool.php">Home</a></li>
+            <li><a href="contactPage.php">Contact</a></li>
+        </ul>
+    </nav>
 </div>
 
 <body>
     <br>
     <br>
     <h2 align=center   style="color: #900C3F;">Register Here</h2>
+    
     <div class="sidecardLeft" id="thumbnail">
         <h2 style="color: #900C3F;">Menu</h2>
     </div>
     <div class="sidecardRight" id="thumbnail">
         <h2 style="color: #900C3F;">Contacts</h2>
+        <section>
+        <form id="searchbar">
+            <label for="search">Search :</label>
+            <input type="search"id="search" name="search">
+            <input  class="btn"  type="submit" name="submit" value="Go!">
+        </form>
+    </section>
     </div>
 
     <div class="fullcard" id="thumbnail" >
@@ -150,7 +207,7 @@
             <input type="text" name="mname"> <br>
             <label for="id">Moderator ID </label><br>
             <input type="text" name="id"> <br><br>
-            <input type="submit" text="Submit">
+            <input class="btn"  type="submit" text="Submit">
         </form> 
     </p>
         </div>
@@ -184,6 +241,12 @@
     </p>
 
     </div>
+    <br>
+    <br>
+    <?php
+    include "footerSchool.html"
+    ?>
+</main>
 
 </body>
 </html>
